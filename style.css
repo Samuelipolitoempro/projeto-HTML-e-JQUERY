@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 10%;
+    display: flex;
+    /* Coloca os filhos (h1 e nav) lado a lado */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
+    gap: 30px;
+    /* Espaço entre o título e o menu */
+    padding: 0 70px;
+    /* Espaço nas laterais */
+    background-color: #052354;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    /* Coloca a imagem e o texto lado a lado */
+    align-items: center;
+    /* Centraliza os dois na mesma altura */
+    gap: 10px;
+    /* Espaço entre a imagem e o texto */
+
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+header nav {
+    padding-left: 40px;
+}
+
+.acoes-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.acoes-header input {
+    background-color: #0b2e68;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-right: auto;
+    margin-left: 90px;
+}
+
+.acoes-header img {
+    width: 35px;
+    /* Largura e altura iguais */
+    height: 35px;
+    border-radius: 50%;
+    /* Deixa 100% redonda */
+    object-fit: cover;
+    /* 👈 Não deixa o rosto ficar esticado/achatado */
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 20px;
+
+}
+
+header nav ul {
+    height: 10%;
+    margin: auto;
+    display: flex;
+    list-style: none;
+    margin: 0px;
+}
+
+header nav ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(109, 105, 105);
+    width: 100px;
+    padding: 20px 20px;
+    background: #052354;
+    margin-left: 1px;
+    white-space: nowrap;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+main {
+    height: 80%;
+}
+
+
+
+#slide {
+    width: 650px;
+    overflow: hidden;
+    height: 250px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+#slide img {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    left: 0;
+}
+
+#slide p {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-family: Arial;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
