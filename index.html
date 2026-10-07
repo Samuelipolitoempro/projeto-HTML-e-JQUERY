@@ -35,16 +35,132 @@
 
     <main>
         <figure id="slide">
+            <span id="anterior">&laquo;</span>
+            <span id="proximo">&raquo;</span>
             <img src="img/images.jpg" alt="Slide 1/3">
             <img src="img/imagesgato.jpg" alt="Slide 2/3">
             <img src="img/Paisagem-em-geografia.webp" alt="Slide 3/3">
         </figure>
         <hr>
         <article>
-            <h1>Contato</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nobis voluptate deserunt aperiam qui quos
-                beatae voluptatibus voluptas? Quas nobis cum deleniti sit fugiat quam voluptates laboriosam adipisci
-                similique consequuntur!</p>
+            <div id="acoes-tabela">
+                <h1>User Analytics Overview</h1>
+                <input type="search user, roles..." placeholder="search user, roles...">
+                <button id="btn-add">+ Add User</button>
+                <button id="btn-export">Export Data</button>
+            </div>
+
+            <table>
+                <thead id="tabela-cabeca">
+                    <tr>
+                        <th width="4%">Nome</th>
+                        <th width="22%">Role</th>
+                        <th width="31%">Email</th>
+                        <th width="25%">Status</th>
+                        <th colspan="2">Opçoes</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-corpo">
+                    <tr>
+                        <td class="usuario-info">
+                            <img src="img/images.jpg" alt="logo">
+                            Samuel Polito
+                        </td>
+                        <td align="center">Developer</td>
+                        <td align="center">samuelipolito@gmail.com</td>
+                        <td align="center">Ativo</td>
+                        <td align="center"><a href="">Editar</a> <a href="">Excluir</a></td>
+                    </tr>
+                    <tr>
+                        <td class="usuario-info">
+                            <img src="img/images.jpg" alt="logo">
+                            Emily Chen
+                        </td>
+                        <td align="center">Developer</td>
+                        <td align="center">emilychen@email.com</td>
+                        <td align="center">Ativo</td>
+                        <td align="center"><a href="">Editar</a> <a href="">Excluir</a></td>
+                    </tr>
+                    <tr>
+                        <td class="usuario-info">
+                            <img src="img/images.jpg" alt="logo">
+                            Carlos Silva
+                        </td>
+                        <td align="center">ADM</td>
+                        <td align="center">carlossilva@email.com</td>
+                        <td align="center">Ativo</td>
+                        <td align="center"><a href="">Editar</a> <a href="">Excluir</a></td>
+                    </tr>
+                    <tr>
+                        <td class="usuario-info">
+                            <img src="img/images.jpg" alt="logo">
+                            Ana Costa
+                        </td>
+                        <td align="center">Editor</td>
+                        <td align="center">anacosta@email.com</td>
+                        <td align="center">Ativo</td>
+                        <td align="center"><a href="">Editar</a> <a href="">Excluir</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">
+                            <div class="paginacao">
+                                <button>1</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <h1 class="titulo">Frequently Asked Questions</h1>
+            <div id="sanfona">
+
+                <h2>
+                    How do i manage user roles?
+                    <span class="icone">-</span>
+                </h2>
+
+                <div class="conteudo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus expedita eligendi dicta
+                        architecto optio quasi temporibus molestiae, impedit eveniet, totam repellendus natus, nulla
+                        dolore facere atque iure vel non odit.</p>
+
+                </div>
+                <h2>
+                    Can i export custom reports?
+                    <span class="icone">+</span>
+                </h2>
+
+                <div class="conteudo">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolor, earum sequi ratione
+                        libero magnam temporibus, quidem et est ad alias necessitatibus labore asperiores officia quasi.
+                        Dolores libero odit assumenda.</p>
+
+                </div>
+                <h2>
+                    How secure is my data on Flux UI?
+                    <span class="icone">+</span>
+                </h2>
+
+                <div class="conteudo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, est dolore labore illo atque ipsa
+                        nemo molestias totam officiis vel aperiam. Consectetur expedita iure minima maxime sed eligendi
+                        nobis fuga?</p>
+
+                </div>
+                <h2>
+                    How can i integrate other tools?
+                    <span class="icone">+</span>
+                </h2>
+
+                <div class="conteudo">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam nulla accusantium non officia hic
+                        omnis consectetur aspernatur atque inventore dolorum ex, distinctio repudiandae dolores
+                        doloribus sit. Quas aspernatur provident molestiae.</p>
+
+                </div>
+            </div>
         </article>
     </main>
 </body>

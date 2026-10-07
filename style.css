@@ -27,6 +27,14 @@ header {
     background-color: #052354;
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
 header h1 {
     color: #ffffff;
 }
@@ -71,6 +79,12 @@ header nav {
     padding: 10px 10px;
     margin-right: auto;
     margin-left: 90px;
+    border: none;
+    outline: none;
+}
+
+.acoes-header input:hover {
+    background-color: #d0cccc;
 }
 
 .acoes-header img {
@@ -121,7 +135,106 @@ main {
     height: 80%;
 }
 
+#acoes-tabela {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    height: 40px;
+}
 
+#acoes-tabela h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#acoes-tabela input {
+    border-radius: 5px;
+    border: 1px solid rgb(108, 105, 105);
+    width: 165px;
+    margin-left: 350px;
+    padding: 5px 5px 5px 5px;
+}
+
+#acoes-tabela button {
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(108, 105, 105);
+    background-color: #052354;
+    color: #fff;
+}
+
+table {
+    border: 1px solid rgb(125, 122, 122);
+    margin-top: 20px;
+    border-radius: 8px;
+
+    /* Troque o collapse por esses dois: */
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    /* Corta o fundo escuro do cabeçalho para acompanhar a curva */
+}
+
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.usuario-info img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0;
+
+}
+
+
+#tabela-cabeca {
+    background-color: #052354;
+    border-radius: 5px;
+}
+
+#tabela-cabeca th {
+    padding: 10px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    color: white;
+}
+
+#tabela-corpo tr td {
+    border-bottom: 1px solid rgb(125, 122, 122);
+    padding: 10px 10px;
+}
+
+#tabela-corpo tr td a {
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #052354;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    gap: 10px;
+}
+
+.paginacao button {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: #000000;
+}
+
+.paginacao button:hover {
+    background-color: #0b2e68;
+    color: #ffffff;
+}
 
 #slide {
     width: 650px;
@@ -139,6 +252,24 @@ main {
     left: 0;
 }
 
+#slide span {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+    color: #000000;
+}
+
+#anterior {
+    left: 10px;
+}
+
+#proximo {
+    right: 10px;
+}
+
 #slide p {
     z-index: 2;
     position: absolute;
@@ -150,4 +281,42 @@ main {
     font-size: 14px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
+}
+
+.titulo {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#sanfona {
+    max-width: 1000px;
+    margin-top: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.icone {
+    font-size: 30px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+#sanfona h2 {
+    display: flex;
+    justify-content: space-between;
+    /* Texto na esquerda, ícone na direita */
+    align-items: center;
+    /* Alinha os dois na mesma altura */
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-top: 1px solid #e0e0e0;
+}
+
+.conteudo p {
+    margin-left: 20px;
 }
